@@ -7,7 +7,7 @@ class Solution(object):
         """
         lastSeenMap = {}
         for i,n in enumerate(nums):
-            if (n in lastSeenMap and i - lastSeenMap[n] <= k):
+            if n in lastSeenMap and i - lastSeenMap[n] <= k:
                 return True
             lastSeenMap[n] = i
         return False
