@@ -1,3 +1,12 @@
+#question: https://leetcode.com/problems/path-crossing/
+
+#approach: explained inline - is basically the same as the 
+#contains duplicate problem, except that we have to keep track of
+#xy coordinate positions.
+
+#runtime: o(n) time where n is length of path, because we are just performing
+#a constant time action for each "movement" in the path to check
+#if we ever come back to an already visited position
 class Solution:
     def isPathCrossing(self, path: str) -> bool:
         # this is our starting position
@@ -27,4 +36,3 @@ class Solution:
             visited[pos] = 0
         
         return False
-        

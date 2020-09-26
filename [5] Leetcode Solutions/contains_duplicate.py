@@ -4,6 +4,11 @@
 # for each int, compare to all other ints
 # seen so far by checking if the hash-set of 
 # all ints observed contains the current int
+
+#runtime: we are going through every element
+#in nums, and for each one checking our hashset
+#Thus runtime is o(n) * o(1) = o(n) where n is
+#length of nums
 class Solution(object):
     def containsDuplicate(self, nums):
         """

@@ -1,3 +1,9 @@
+#question: https://leetcode.com/problems/jewels-and-stones/
+
+#approach: explained inline
+
+#runtime: linear - o(m+n) time where m is length of J and 
+#n is length of S
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         # first create a hash-set of jewels,
