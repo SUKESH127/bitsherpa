@@ -16,6 +16,7 @@ class Solution(object):
         :rtype: bool
         """
         lastSeenMap = {}
+        
         for i,n in enumerate(nums):
             if n in lastSeenMap and i - lastSeenMap[n] <= k:
                 return True
