@@ -14,7 +14,6 @@
 # We thus do an inorder traversal, and to keep it o(1) storage
 # we only store the previous node, and then compare each node
 # with the value of the previous one. 
-
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
         prev = [float('-inf')]

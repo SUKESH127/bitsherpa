@@ -39,7 +39,8 @@ class Solution:
         sums = [0]*(getDepth(root)+1)
         
         # [2 Now we now "tally" up the sums by visiting all
-        # the nodes in the tree using depth first search
+        # the nodes in the tree using a post-order traversal
+        # (depth first search)
         def dfs(node, level):
             #base case
             if node is None:
